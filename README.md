@@ -9,6 +9,8 @@
 
 ### 道路網切断情報をDRMデータと統合
 
+- 道路網の切断は，リンクIDで管理された切断情報（`data/01_raw/links/disrupted_link_national.csv`）と，緯度軽度で管理された切断情報（`data/01_raw/links/disrupted_link_prefectural.csv`）の２種類を想定しています。
+
 ![disruption_animation](/docs/networks.gif)
 
 ### 道路網切断に伴う道路網性能低下を定量評価
@@ -115,3 +117,5 @@ $ python main.py
   - chikaraishim@hiroshima-u.ac.jp
 - Diana Nur Safitri
   - dianas@hiroshima-u.ac.jp
+
+本研究は，日本デジタル道路地図協会令和５年度研究助成「道路ネットワーク性能ダイナミクスの指標化及び可視化に関する研究」のもと実施したものです。
