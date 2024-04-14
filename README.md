@@ -7,6 +7,8 @@
 - 道路網切断情報をDRMデータと統合（`core/network.py`）
 - 道路網切断に伴う道路網性能低下を定量評価（`core/logsum_calc.py`、`core/logsum_viz.py`）
 
+道路網性能低下の定量評価は，Recursive logitモデルを用いています。詳しくは，Safitri and Chikaraishi (2022)をご確認ください。
+
 ### 道路網切断情報をDRMデータと統合
 
 - 道路網の切断は，リンクIDで管理された切断情報（`data/01_raw/links/disrupted_link_national.csv`）と，緯度軽度で管理された切断情報（`data/01_raw/links/disrupted_link_prefectural.csv`）の２種類を想定しています。
@@ -119,3 +121,7 @@ $ python main.py
   - dianas@hiroshima-u.ac.jp
 
 本研究は，日本デジタル道路地図協会令和５年度研究助成「道路ネットワーク性能ダイナミクスの指標化及び可視化に関する研究」のもと実施したものです。
+
+参考文献
+
+- [Safitri, N.D., Chikaraishi, M. (2022) Impact of Transport Network Disruption on Travel Demand: A Case Study of July 2018 Heavy Rain Disaster, Japan, Asian Transport Studies, 8, 100057.](https://www.sciencedirect.com/science/article/pii/S2185556022000037)
