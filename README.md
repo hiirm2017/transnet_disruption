@@ -7,7 +7,7 @@
 - 道路網切断情報をDRMデータと統合（`core/network.py`）
 - 道路網切断に伴う道路網性能低下を定量評価（`core/logsum_calc.py`、`core/logsum_viz.py`）
 
-道路網性能低下の定量評価は，Recursive logitモデルを用いています。詳しくは，Safitri and Chikaraishi (2022)をご確認ください。
+道路網性能低下の定量評価は，Recursive logitモデルから得られるログサム値を用いています。詳しくは，Safitri and Chikaraishi (2022)をご確認ください。
 
 ### 道路網切断情報をDRMデータと統合
 
